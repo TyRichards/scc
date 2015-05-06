@@ -33,11 +33,11 @@
 		<!--[if lte IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->	
-		<div class="container">		
+		<div class="container-fluid">		
 		
 		<?php do_action('before'); ?> 
 		<header>			
-			<section class="container-fluid top-header hidden-xs">
+			<section class="container top-header hidden-xs">
 				<div class="row">
 					<div class="col-sm-4 header-left">
 						<?php if (is_active_sidebar('header-left')) { ?> 
@@ -67,7 +67,7 @@
 			
 			<section class="top-navbar">				
 				<nav class="navbar navbar-default" role="navigation">
-					<div class="container-fluid">						
+					<div class="container">						
 						<div class="navbar-header">	
 							<div class="col-xs-10 col-no-padding-xs visible-xs">
 								<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	

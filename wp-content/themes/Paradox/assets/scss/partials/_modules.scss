@@ -157,11 +157,14 @@ border-color: $btn-secondary-border;
     margin-bottom: 0px;
 }
 .navbar-default {
-    @include border-radius(6px 6px 6px 6px);
+    // @include border-radius(6px 6px 6px 6px);
 }
 
-body > header > .top-navbar {
-    // border-bottom: 5px solid $gray-lighter;
+body header .top-navbar {
+    // border-bottom: 5px solid $gray-lighter;    
+    -webkit-box-shadow: 0px 1px 3px 0px $text-color;
+    -moz-box-shadow: 0px 1px 3px 0px $text-color;
+    box-shadow: 0px 1px 3px 0px $text-color;
 }
 
 .navbar-toggle {
@@ -184,7 +187,12 @@ body > header > .top-navbar {
 
 .navbar-collapse .navbar-nav li {
     border-bottom: 1px solid darken($navbar-default-bg, 5%);
-    a { padding-left: 18px; padding-right: 18px; text-align: center; }
+    a { 
+        padding-left: 18px; 
+        padding-right: 18px; 
+        text-align: center; 
+        font-family: $font-family-serif;
+    }
 }
 
 .navbar-nav {
