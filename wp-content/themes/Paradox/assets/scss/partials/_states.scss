@@ -15,14 +15,11 @@
     }
 
     .small-footer {
-
         a {
             display: inline;
             text-align: left;        
         }
-
-        .footer-menu, .footer-credits {
-            width: auto;
+        .footer-menu, .footer-credits { // width: auto;
         }    
 
         .footer-credits a,
@@ -36,22 +33,28 @@
 
 // Medium devices (desktops, 992px and up)
 @media (min-width: $screen-md-min) {
-
-    header .navbar-brand img {
-        width: 100%;
-    }    
-
+    header .navbar-brand img { width: 100%; }    
+    .footer-credits, .footer-menu { float: left; }
+    .small-footer {
+        .footer-credits { text-align: left; }   
+        .footer-menu {
+            padding: 0;
+            margin: 0;
+            border: none;
+            .menu li a { font-size: 13px; }
+        }
+    }
+    .small-footer .paradox p { text-align: right; }
+    .small-footer .footer-menu .copyright { float: left; }
     .logos .container .cred-logo {
         padding-left: 30px;
         padding-right: 30px;
     }    
-
     .sidebar #widget_sp_image-3 img {
         width: 75%;
         @include border-radius(200px);
         border: 4px solid $hr-border;
-    }    
-
+    }        
 }
 
 // Exclusive Media Queries /////////////////////////////////////////////////////////////////

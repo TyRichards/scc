@@ -62,6 +62,15 @@ add_action('after_setup_theme', 'bootstrapBasicSetup');
 function bootstrapBasicWidgetsInit() 
 {
 	register_sidebar(array(
+		'name'          => __('Header left', 'bootstrap-basic'),
+		'id'            => 'header-left',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p class="widget-title lead">',
+		'after_title'   => '</p>',
+	));
+
+	register_sidebar(array(
 		'name'          => __('Header right', 'bootstrap-basic'),
 		'id'            => 'header-right',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -123,6 +132,7 @@ function bootstrapBasicWidgetsInit()
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	));	
+
 }// bootstrapBasicWidgetsInit
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');
 

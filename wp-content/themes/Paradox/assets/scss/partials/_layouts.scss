@@ -3,7 +3,7 @@
 // Header /////////////////////////////////////////////////////////////////
 
 body > header { 
-    @include dynamic-bg($header-bg-color); 
+    // @include dynamic-bg($header-bg-color); 
     // margin-bottom: -20px;
 }
 
@@ -51,7 +51,7 @@ body > header {
 // Footer /////////////////////////////////////////////////////////////////
 
 .footer {
-    @include dynamic-bg($footer-bg-color);
+    // @include dynamic-bg($footer-bg-color);
 }
 
 
