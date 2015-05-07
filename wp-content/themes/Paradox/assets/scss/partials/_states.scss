@@ -73,8 +73,14 @@
             background: darken($brand-primary, 10%);
             padding: 12px 0;
             border-radius: 0;           
-            .icon-bar { margin-left: auto; margin-right: auto; float: none; }
-            .menu-text {  }
+            .menu-elements { 
+                margin-left: auto; 
+                margin-right: auto; 
+                float: none; 
+                width: 80px;
+            }
+            .menu-text {}
+            .icon-bar {}
         }
     }
 
@@ -148,6 +154,8 @@
         text-align: center;
         img { float: none; }
     }
+
+    footer .footer-credits a { padding: 0; }
 }
 
 // Small devices only (tablets, 768px to 992px)
@@ -157,9 +165,12 @@
         padding-right: 0px;
     }    
     .no-float-sm { float: none!important; }    
-    .small-footer .footer-menu { 
-        text-align: center; 
-        .menu li a { padding-right: 12px; padding-left: 12px; }      
+    .small-footer {
+        .footer-credits a { padding: 0; }
+        .footer-menu { 
+            text-align: center; 
+            .menu li a { padding-right: 12px; padding-left: 12px; }      
+        }
     }
 }
 

@@ -55,6 +55,7 @@ border: 1px solid #dddddd;
 }
 
 header {
+    // background: $brand-primary;
     position: relative;
     .top-header {
         .header-logo { 
@@ -260,6 +261,12 @@ color: #ffffff!important;
 }
 
 .small-footer {
+    .social-links {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a { display: inline; margin: 0 10px; }
+    }
     background: $navbar-default-bg;
     color: #ffffff;
     a {
@@ -273,12 +280,12 @@ color: #ffffff!important;
     }
     .footer-menu {
         width: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         border-top: 1px solid darken($brand-primary, 10%);
         border-bottom: 1px solid darken($brand-primary, 10%);
-        margin-top: 10px;
-        margin-bottom: 10px;        
+        margin-top: 20px;
+        margin-bottom: 20px;        
         #nav_menu-2 {
             width: 100%;
         }

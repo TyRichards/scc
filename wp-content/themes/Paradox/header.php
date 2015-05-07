@@ -77,11 +77,13 @@
 								</div>		
 								<div class="col-xs-12 col-sm-4">									
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-										<!-- <span class="menu-text">Menu</span> -->
-										<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>									
+										<div class="menu-elements">
+											<span class="menu-text">Menu</span>
+											<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>									
+										</div>
 									</button>
 								</div>																		 
 							</div> <!-- .row -->
@@ -104,15 +106,15 @@
 		<div class="body-content">
 
 			<!-- Mobile Landing Section -->
-			<section class="mobile-landing visible-xs col-xs-12">
+			<section class="mobile-landing visible-xs visible-sm col-xs-12">
 			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-right:5px">
 				    <a class="btn btn-primary btn-lg btn-block" href="tel:8178978882">
-				        (817) 897-8882
+				        <i class="fa fa-phone fa-left"></i> (817) 897-8882
 				    </a> 
 			    </div>
 			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-left:5px">
 				    <a class="btn btn-primary btn-lg btn-block" href="mailto:shannon@southlakecounseling.org">
-				        Send Email
+				        <i class="fa fa-envelope fa-left"></i> Send Email
 				    </a> 				    
 			    </div>
 			</section>			
