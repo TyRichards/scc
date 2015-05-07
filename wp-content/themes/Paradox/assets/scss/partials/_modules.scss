@@ -94,6 +94,22 @@ header {
             float: left;
         }
     }
+    .navbar-toggle {
+        width: 100px;
+        float: right;
+        .menu-text {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 14px;
+            float: left;
+            letter-spacing: 2px;
+            line-height: 1.25;
+        }
+        .icon-bar {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }    
 }
 
 .col-no-padding {

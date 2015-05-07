@@ -33,11 +33,11 @@
 		<!--[if lte IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->	
-		<div class="container-fluid">		
+			
 		
 		<?php do_action('before'); ?> 
 		<header>			
-			<section class="container top-header hidden-xs">
+			<section class="container top-header hidden-xs hidden-sm">
 				<div class="row">
 					<div class="col-sm-4 header-left">
 						<?php if (is_active_sidebar('header-left')) { ?> 
@@ -68,20 +68,23 @@
 			<section class="top-navbar">				
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="container">						
-						<div class="navbar-header">	
-							<div class="col-xs-10 col-no-padding-xs visible-xs">
-								<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sm.png" alt="Xstream Inspections Commercial & Residential Inspections">
-								</a>	
-							</div>											
-							<div class="col-xs-2 col-no-padding-xs">
-								<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-primary-collapse">
-									<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>									
-								</button>
-							</div>					
+						<div class="navbar-header">
+							<div class="row">	
+								<div class="col-xs-12 col-sm-8 visible-xs visible-sm">
+									<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sm.png" alt="Southlake Christian Counseling">
+									</a>	
+								</div>		
+								<div class="col-xs-12 col-sm-4">									
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+										<!-- <span class="menu-text">Menu</span> -->
+										<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>									
+									</button>
+								</div>																		 
+							</div> <!-- .row -->
 						</div>
 						
 						<div class="collapse navbar-collapse navbar-primary-collapse">

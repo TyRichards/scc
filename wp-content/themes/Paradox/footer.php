@@ -6,7 +6,7 @@
  */
 ?>
 			</div><!--.body-content-->						
-		</div> <!-- .container -->
+		
 		
 		<footer class="footer">    		
 	      	<section class="small-footer">
