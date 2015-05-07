@@ -20,8 +20,8 @@ $brand-dark:            #171717;
 
 // Scaffolding /////////////////////////////////////////////////////////////////
 $body-bg:               #d5b792; //#ecf0f1;
-$header-bg-color:       transparent;
-$footer-bg-color:       $brand-primary;
+// $header-bg-color:       transparent;
+// $footer-bg-color:       $brand-primary;
 $text-color:            #71523A;
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
@@ -41,8 +41,8 @@ $font-size-large:       ceil(($font-size-base * 1.25));
 $font-size-small:       ceil(($font-size-base * 0.85));
 
 $font-size-h1:          floor(($font-size-base * 3.0));
-$font-size-h2:          floor(($font-size-base * 2.9));
-$font-size-h3:          ceil(($font-size-base * 2.0));
+$font-size-h2:          floor(($font-size-base * 2.3));
+$font-size-h3:          ceil(($font-size-base * 1.7));
 $font-size-h4:          ceil(($font-size-base * 1.9));
 $font-size-h5:          ceil(($font-size-base * 1.5));
 $font-size-h6:          ($font-size-base + 2);
@@ -322,16 +322,16 @@ $navbar-border-radius:             0px;
 $navbar-collapse-max-height:       700px;
 
 // $navbar-default-color:             #777;
-$navbar-default-bg:                $brand-primary;
-$navbar-default-border:            darken($header-bg-color, 10%);
+$navbar-default-bg:                darken($brand-primary, 5%);
+$navbar-default-border:            $navbar-default-bg;
 
 // // Navbar links
 $navbar-default-link-color:                #ffffff;
 $navbar-default-link-hover-color:          #ffffff;
 $navbar-default-link-open-color:           #ffffff;
-$navbar-default-link-hover-bg:             darken($brand-primary, 5%);
+$navbar-default-link-hover-bg:             darken($brand-primary, 10%);
 $navbar-default-link-active-color:         #ffffff;
-$navbar-default-link-active-bg:            darken($brand-primary, 5%);
+$navbar-default-link-active-bg:            $navbar-default-link-hover-bg;
 // $navbar-default-link-disabled-color:       #ccc;
 // $navbar-default-link-disabled-bg:          transparent;
 

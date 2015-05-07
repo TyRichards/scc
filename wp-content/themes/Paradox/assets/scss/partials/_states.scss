@@ -6,12 +6,16 @@
 // Small devices (tablets, 768px and up)
 @media (min-width: $screen-sm-min) {
 
+    .sidebar-col .widget {
+        h3 { text-align: left }    
+    }
+
     .masthead {
         background-color: $gray-lighter;
     }
 
-    .navbar-collapse .navbar-nav li {
-       border: none;
+    .navbar-collapse {
+        .navbar-nav li { border: none; }
     }
 
     .small-footer {
@@ -62,6 +66,10 @@
 // Extra small devices only (phones, less than 768px)
 @media (max-width: $screen-xs-max) {
 
+    .navbar-default { 
+        background-color: $brand-primary; 
+        .navbar-collapse { background-color: $navbar-default-bg; }
+    }    
     body header .top-navbar .navbar-header {
         // float: none;
         .navbar-toggle {  
@@ -106,16 +114,16 @@
     .body-content {
 
         h1 {
-            font-size: ($font-size-h1 * 0.7);
+            font-size: ($font-size-h1 * 0.8);
         }
         h2 {
-            font-size: ($font-size-h2 * 0.7);
+            font-size: ($font-size-h2 * 0.9);
         } 
         h3 {
-            font-size: ($font-size-h3 * 0.7);
+            font-size: ($font-size-h3 * 1);
         }    
         h4 {
-            font-size: ($font-size-h4 * 0.7);
+            font-size: ($font-size-h4 * 0.9);
         } 
         h5 {
             font-size: ($font-size-h5 * 0.8);
@@ -160,6 +168,10 @@
 
 // Small devices only (tablets, 768px to 992px)
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .navbar-default { 
+        background-color: $brand-primary; 
+        .navbar-collapse { background-color: $navbar-default-bg; }
+    }        
     .col-no-padding-sm {
         padding-left: 0px;
         padding-right: 0px;
@@ -176,15 +188,12 @@
 
 // Medium devices only (desktops, 992px to 1200px)
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-
+    .navbar-collapse .gform_wrapper { width: 206px; }
     .col-no-padding-md {
         padding-left: 0px;
         padding-right: 0px;
-    }   
-    
-    .no-float-md {
-        float: none!important;
     }       
+    .no-float-md { float: none!important; }       
 }
 
 // Large devices only (large desktops, 1200px and up)

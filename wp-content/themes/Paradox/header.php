@@ -95,9 +95,9 @@
 								dynamic_sidebar('navbar-right'); 
 							} ?> 
 
-							<a class="btn btn-default navbar-btn navbar-right visible-lg" href="#">
-								Test
-							</a>        					
+							<div class="navbar-right visible-md visible-lg">
+								<?php gravity_form(2, $display_title=true, $display_description=false, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
+							</div>        					
 						</div><!--.navbar-collapse-->
 					</div>
 				</nav>				
@@ -107,14 +107,16 @@
 
 			<!-- Mobile Landing Section -->
 			<section class="mobile-landing visible-xs visible-sm col-xs-12">
-			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-right:5px">
-				    <a class="btn btn-primary btn-lg btn-block" href="tel:8178978882">
-				        <i class="fa fa-phone fa-left"></i> (817) 897-8882
-				    </a> 
-			    </div>
-			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-left:5px">
-				    <a class="btn btn-primary btn-lg btn-block" href="mailto:shannon@southlakecounseling.org">
-				        <i class="fa fa-envelope fa-left"></i> Send Email
-				    </a> 				    
-			    </div>
+				<div class="row">
+				    <div class="col-xs-6 phone" style="padding-right:5px">
+					    <a class="btn btn-primary btn-lg btn-block" href="tel:8178978882">
+					        <i class="fa fa-phone"></i>(817) 897-8882
+					    </a> 
+				    </div>
+				    <div class="col-xs-6 phone" style="padding-left:5px">
+					    <a class="btn btn-primary btn-lg btn-block" href="mailto:shannon@southlakecounseling.org">
+					        <i class="fa fa-envelope"></i>Send Email
+					    </a> 				    
+				    </div>
+				</div>
 			</section>			

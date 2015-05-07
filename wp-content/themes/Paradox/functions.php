@@ -87,6 +87,16 @@ function bootstrapBasicWidgetsInit()
 		'before_title'  => '',
 		'after_title'   => '',
 	));
+
+    register_sidebar(array(
+    	'id' => 'sidebar2', //
+    	'name' => __('Home Bottom Section', 'bonestheme'),
+    	'description' => __('The widget area for bottom of home page.', 'bonestheme'),
+    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    	'after_widget' => '</div>',
+    	'before_title' => '<h4 class="widgettitle">',
+    	'after_title' => '</h4>',
+    ));	
 	
 	// register_sidebar(array(
 	// 	'name'          => __('Sidebar left', 'bootstrap-basic'),

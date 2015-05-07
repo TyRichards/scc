@@ -9,7 +9,7 @@ Template Name: Home
 <section class="primary-content">
     <div class="container">
         <div class="row">
-            <section class="main-col page-content col-sm-7">
+            <section class="main-col page-content col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1">
                 <div id="main" class="site-main" role="main">
                     <?php
                     while (have_posts()) {
@@ -27,19 +27,24 @@ Template Name: Home
 
                     } //endwhile;
                     ?>                 
-               </div>
+                </div>
+                <div class="hidden-xs">
+                    <?php dynamic_sidebar('sidebar2'); ?> 
+                </div>
             </section> 
-            <section class="sidebar-col sidebar-right sidebar col-sm-5">
-                <div class="col-sm-12 col-md-10 col-md-offset-2 col-no-padding-xs">
-    <!--                 <?php 
-                        if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                        the_post_thumbnail('sidebar-thumb', array('class' => 'feature-image attachment-sidebar-thumb img-rounded' ));
-                        } 
-                        else {
-                            ?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sidebar-default.jpg" class="feature-image attachment-sidebar-thumb wp-post-image img-rounded col-md-9 col-no-padding" alt="<?php wp_title('|', true, 'right'); ?>"><?php
-                        }
-                    ?>   -->       
-                    <?php get_sidebar('default'); ?>
+            <section class="sidebar-col sidebar-right sidebar col-sm-4 col-md-4">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-2 col-md-9 col-md-offset-3">
+        <!--                 <?php 
+                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                            the_post_thumbnail('sidebar-thumb', array('class' => 'feature-image attachment-sidebar-thumb img-rounded' ));
+                            } 
+                            else {
+                                ?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sidebar-default.jpg" class="feature-image attachment-sidebar-thumb wp-post-image img-rounded col-md-9 col-no-padding" alt="<?php wp_title('|', true, 'right'); ?>"><?php
+                            }
+                        ?>   -->       
+                        <?php get_sidebar('default'); ?>
+                    </div>
                 </div>
             </section>                   
         </div> <!-- .row -->
