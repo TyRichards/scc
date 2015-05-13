@@ -48,11 +48,7 @@
 						<?php } // endif; ?> 						
 					</div>
 					<div class="col-sm-4 header-logo">
-						<div class="main-logo">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Xstream Inspections Commercial & Residential Inspections" width="100%">
-					        </a>
-				        </div>			        
+								        
 					</div>
 					<div class="col-sm-4 header-right">					
 						<?php if (is_active_sidebar('header-right')) { ?> 
