@@ -91,7 +91,7 @@ Template Name: Staff
                             <div class="well">
                                 <a class="btn btn-primary btn-cta" href="/contact">Contact Us</a>
                                 <span class="copy-cta lead">
-                                    Contact Southlake Christian Counseling today for more information.
+                                     Contact Southlake Christian Counseling today for more information.
                                 </span>
                             </div>
                 
