@@ -46,7 +46,7 @@
 		<!--wordpress footer-->
 		<?php wp_footer(); ?> 
 		<!-- Typekit -->
-		<script type="text/javascript" src="//use.typekit.net/ksc8vkp.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>		
+		<script src="//use.typekit.net/you2ofv.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>			
 	</body>
 </html>
