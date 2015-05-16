@@ -4,7 +4,8 @@
 
 		<?php if ('post' == get_post_type()) { ?> 
 		<div class="entry-meta">
-			<?php bootstrapBasicPostOn(); ?> 
+			<div class="post-meta"><?php bootstrapBasicPostOn(); ?></div>
+			<a href="<?php the_permalink() ?>#respond" class="discussion btn btn-primary btn-sm">Leave A Comment &raquo;</a>
 		</div><!-- .entry-meta -->
 		<?php } //endif; ?> 
 	</header><!-- .entry-header -->
@@ -33,7 +34,10 @@
 	</div><!-- .entry-content -->
 	<?php } //endif; ?> 
 
-	
+	<!-- <div class="well well-lg text-center">
+		<?php // gravity_form(5, true, true, false, null, true, 50); ?>
+	</div>		 -->
+
 	<footer class="entry-meta">
 		<?php if ('post' == get_post_type()) { // Hide category and tag text for pages on Search ?> 
 		<div class="entry-meta-category-tag">
@@ -62,9 +66,23 @@
 		<div class="entry-meta-comment-tools">
 			<?php if (! post_password_required() && (comments_open() || '0' != get_comments_number())) { ?> 
 			<span class="comments-link"><?php bootstrapBasicCommentsPopupLink(); ?></span>
-			<?php } //endif; ?> 
-
-			<?php bootstrapBasicEditPostLink(); ?> 
+			<?php } //endif; ?> 			
 		</div><!--.entry-meta-comment-tools-->
+
+		<div class="share-icons">				    
+	    	<?php
+				if ( function_exists('sharethis_button') ) {
+					sharethis_button();
+				}
+			?>
+			
+			<script type="text/javascript">
+				jQuery(document).ready(function() {
+					jQuery('span.st_pinterest_vcount').attr('st_image', '<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>');
+				});
+			</script>
+			
+			<a id="bookmark" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bookmark-icon.png" /></a>
+	    </div><!-- end .share-icons -->		
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

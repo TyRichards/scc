@@ -36,7 +36,7 @@
 			
 		
 		<?php do_action('before'); ?> 
-		<header>			
+		<header class="header-top">			
 			<section class="container top-header hidden-xs hidden-sm">
 				<div class="row">
 					<div class="col-sm-4 header-left">

@@ -386,7 +386,7 @@ body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.65;
-  color: #71523a;
+  color: #563b27;
   background-color: #d5b792;
 }
 
@@ -2300,7 +2300,7 @@ output {
 /* line 118, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .form-control, .ginput_container input,
 .ginput_container select,
-.ginput_container textarea {
+.ginput_container textarea, .sidebar .widget #archives-dropdown-2 {
   display: block;
   width: 100%;
   height: 44px;
@@ -2321,7 +2321,7 @@ output {
 /* line 820, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .form-control:focus, .ginput_container input:focus,
 .ginput_container select:focus,
-.ginput_container textarea:focus {
+.ginput_container textarea:focus, .sidebar .widget #archives-dropdown-2:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -2330,45 +2330,45 @@ output {
 /* line 57, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .form-control:-moz-placeholder, .ginput_container input:-moz-placeholder,
 .ginput_container select:-moz-placeholder,
-.ginput_container textarea:-moz-placeholder {
+.ginput_container textarea:-moz-placeholder, .sidebar .widget #archives-dropdown-2:-moz-placeholder {
   color: #999999;
 }
 /* line 58, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .form-control::-moz-placeholder, .ginput_container input::-moz-placeholder,
 .ginput_container select::-moz-placeholder,
-.ginput_container textarea::-moz-placeholder {
+.ginput_container textarea::-moz-placeholder, .sidebar .widget #archives-dropdown-2::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
 /* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .form-control:-ms-input-placeholder, .ginput_container input:-ms-input-placeholder,
 .ginput_container select:-ms-input-placeholder,
-.ginput_container textarea:-ms-input-placeholder {
+.ginput_container textarea:-ms-input-placeholder, .sidebar .widget #archives-dropdown-2:-ms-input-placeholder {
   color: #999999;
 }
 /* line 61, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .form-control::-webkit-input-placeholder, .ginput_container input::-webkit-input-placeholder,
 .ginput_container select::-webkit-input-placeholder,
-.ginput_container textarea::-webkit-input-placeholder {
+.ginput_container textarea::-webkit-input-placeholder, .sidebar .widget #archives-dropdown-2::-webkit-input-placeholder {
   color: #999999;
 }
 /* line 147, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .form-control[disabled], .ginput_container input[disabled],
 .ginput_container select[disabled],
-.ginput_container textarea[disabled], .form-control[readonly], .ginput_container input[readonly],
+.ginput_container textarea[disabled], .sidebar .widget [disabled]#archives-dropdown-2, .form-control[readonly], .ginput_container input[readonly],
 .ginput_container select[readonly],
-.ginput_container textarea[readonly], fieldset[disabled] .form-control, fieldset[disabled] .ginput_container input, .ginput_container fieldset[disabled] input,
+.ginput_container textarea[readonly], .sidebar .widget [readonly]#archives-dropdown-2, fieldset[disabled] .form-control, fieldset[disabled] .ginput_container input, .ginput_container fieldset[disabled] input,
 fieldset[disabled] .ginput_container select,
 .ginput_container fieldset[disabled] select,
 fieldset[disabled] .ginput_container textarea,
-.ginput_container fieldset[disabled] textarea {
+.ginput_container fieldset[disabled] textarea, fieldset[disabled] .sidebar .widget #archives-dropdown-2, .sidebar .widget fieldset[disabled] #archives-dropdown-2 {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
 
 /* line 158, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 textarea.form-control,
-.ginput_container textarea {
+.ginput_container textarea, .sidebar .widget textarea#archives-dropdown-2 {
   height: auto;
 }
 
@@ -2447,7 +2447,7 @@ input[type="checkbox"],
 /* line 835, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .input-sm, .input-group-sm > .form-control, .ginput_container .input-group-sm > input,
 .ginput_container .input-group-sm > select,
-.ginput_container .input-group-sm > textarea,
+.ginput_container .input-group-sm > textarea, .sidebar .widget .input-group-sm > #archives-dropdown-2,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .gform_button {
@@ -2460,7 +2460,7 @@ input[type="checkbox"],
 
 /* line 840, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 select.input-sm, .input-group-sm > select.form-control,
-.ginput_container .input-group-sm > select,
+.ginput_container .input-group-sm > select, .sidebar .widget .input-group-sm > select#archives-dropdown-2,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .input-group-sm > .input-group-btn > select.gform_button {
@@ -2470,7 +2470,7 @@ select.input-sm, .input-group-sm > select.form-control,
 
 /* line 845, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 textarea.input-sm, .input-group-sm > textarea.form-control,
-.ginput_container .input-group-sm > textarea,
+.ginput_container .input-group-sm > textarea, .sidebar .widget .input-group-sm > textarea#archives-dropdown-2,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .input-group-sm > .input-group-btn > textarea.gform_button {
@@ -2480,7 +2480,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 /* line 835, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .input-lg, .input-group-lg > .form-control, .ginput_container .input-group-lg > input,
 .ginput_container .input-group-lg > select,
-.ginput_container .input-group-lg > textarea,
+.ginput_container .input-group-lg > textarea, .sidebar .widget .input-group-lg > #archives-dropdown-2,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .gform_button {
@@ -2493,7 +2493,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 
 /* line 840, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 select.input-lg, .input-group-lg > select.form-control,
-.ginput_container .input-group-lg > select,
+.ginput_container .input-group-lg > select, .sidebar .widget .input-group-lg > select#archives-dropdown-2,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .input-group-lg > .input-group-btn > select.gform_button {
@@ -2503,7 +2503,7 @@ select.input-lg, .input-group-lg > select.form-control,
 
 /* line 845, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 textarea.input-lg, .input-group-lg > textarea.form-control,
-.ginput_container .input-group-lg > textarea,
+.ginput_container .input-group-lg > textarea, .sidebar .widget .input-group-lg > textarea#archives-dropdown-2,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .input-group-lg > .input-group-btn > textarea.gform_button {
@@ -2524,7 +2524,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-warning .ginput_container select,
 .ginput_container .has-warning select,
 .has-warning .ginput_container textarea,
-.ginput_container .has-warning textarea {
+.ginput_container .has-warning textarea, .has-warning .sidebar .widget #archives-dropdown-2, .sidebar .widget .has-warning #archives-dropdown-2 {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2534,7 +2534,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-warning .ginput_container select:focus,
 .ginput_container .has-warning select:focus,
 .has-warning .ginput_container textarea:focus,
-.ginput_container .has-warning textarea:focus {
+.ginput_container .has-warning textarea:focus, .has-warning .sidebar .widget #archives-dropdown-2:focus, .sidebar .widget .has-warning #archives-dropdown-2:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -2560,7 +2560,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-error .ginput_container select,
 .ginput_container .has-error select,
 .has-error .ginput_container textarea,
-.ginput_container .has-error textarea {
+.ginput_container .has-error textarea, .has-error .sidebar .widget #archives-dropdown-2, .sidebar .widget .has-error #archives-dropdown-2 {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2570,7 +2570,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-error .ginput_container select:focus,
 .ginput_container .has-error select:focus,
 .has-error .ginput_container textarea:focus,
-.ginput_container .has-error textarea:focus {
+.ginput_container .has-error textarea:focus, .has-error .sidebar .widget #archives-dropdown-2:focus, .sidebar .widget .has-error #archives-dropdown-2:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -2596,7 +2596,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-success .ginput_container select,
 .ginput_container .has-success select,
 .has-success .ginput_container textarea,
-.ginput_container .has-success textarea {
+.ginput_container .has-success textarea, .has-success .sidebar .widget #archives-dropdown-2, .sidebar .widget .has-success #archives-dropdown-2 {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2606,7 +2606,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-success .ginput_container select:focus,
 .ginput_container .has-success select:focus,
 .has-success .ginput_container textarea:focus,
-.ginput_container .has-success textarea:focus {
+.ginput_container .has-success textarea:focus, .has-success .sidebar .widget #archives-dropdown-2:focus, .sidebar .widget .has-success #archives-dropdown-2:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -2628,7 +2628,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #b79173;
+  color: #ae774f;
 }
 
 @media (min-width: 768px) {
@@ -2647,7 +2647,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   .form-inline .ginput_container textarea,
   .ginput_container .form-inline textarea,
   .navbar-form .ginput_container textarea,
-  .ginput_container .navbar-form textarea {
+  .ginput_container .navbar-form textarea, .form-inline .sidebar .widget #archives-dropdown-2, .sidebar .widget .form-inline #archives-dropdown-2, .navbar-form .sidebar .widget #archives-dropdown-2, .sidebar .widget .navbar-form #archives-dropdown-2 {
     display: inline-block;
   }
   /* line 312, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
@@ -2655,7 +2655,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   .form-inline .ginput_container select,
   .ginput_container .form-inline select,
   .navbar-form .ginput_container select,
-  .ginput_container .navbar-form select {
+  .ginput_container .navbar-form select, .form-inline .sidebar .widget select#archives-dropdown-2, .sidebar .widget .form-inline select#archives-dropdown-2, .navbar-form .sidebar .widget select#archives-dropdown-2, .sidebar .widget .navbar-form select#archives-dropdown-2 {
     width: auto;
   }
   /* line 319, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
@@ -4530,7 +4530,7 @@ input[type="button"].btn-block {
 .input-group .ginput_container select,
 .ginput_container .input-group select,
 .input-group .ginput_container textarea,
-.ginput_container .input-group textarea {
+.ginput_container .input-group textarea, .input-group .sidebar .widget #archives-dropdown-2, .sidebar .widget .input-group #archives-dropdown-2 {
   width: 100%;
   margin-bottom: 0;
 }
@@ -4544,7 +4544,9 @@ input[type="button"].btn-block {
 .input-group .ginput_container select,
 .ginput_container .input-group select,
 .input-group .ginput_container textarea,
-.ginput_container .input-group textarea {
+.ginput_container .input-group textarea,
+.input-group .sidebar .widget #archives-dropdown-2,
+.sidebar .widget .input-group #archives-dropdown-2 {
   display: table-cell;
 }
 /* line 45, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -4556,7 +4558,9 @@ input[type="button"].btn-block {
 .input-group .ginput_container select:not(:first-child):not(:last-child),
 .ginput_container .input-group select:not(:first-child):not(:last-child),
 .input-group .ginput_container textarea:not(:first-child):not(:last-child),
-.ginput_container .input-group textarea:not(:first-child):not(:last-child) {
+.ginput_container .input-group textarea:not(:first-child):not(:last-child),
+.input-group .sidebar .widget #archives-dropdown-2:not(:first-child):not(:last-child),
+.sidebar .widget .input-group #archives-dropdown-2:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4581,7 +4585,7 @@ input[type="button"].btn-block {
   border-radius: 3px;
 }
 /* line 71, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-addon.input-sm,
+.input-group-addon.input-sm, .sidebar .widget .input-group-sm > .input-group-addon#archives-dropdown-2,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .input-group-sm > .input-group-btn > .input-group-addon.gform_button {
@@ -4590,7 +4594,7 @@ input[type="button"].btn-block {
   border-radius: 2px;
 }
 /* line 76, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-addon.input-lg,
+.input-group-addon.input-lg, .sidebar .widget .input-group-lg > .input-group-addon#archives-dropdown-2,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .input-group-lg > .input-group-btn > .input-group-addon.gform_button {
@@ -4609,7 +4613,7 @@ input[type="button"].btn-block {
 .input-group .ginput_container select:first-child,
 .ginput_container .input-group select:first-child,
 .input-group .ginput_container textarea:first-child,
-.ginput_container .input-group textarea:first-child,
+.ginput_container .input-group textarea:first-child, .input-group .sidebar .widget #archives-dropdown-2:first-child, .sidebar .widget .input-group #archives-dropdown-2:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .gform_button,
@@ -4630,7 +4634,7 @@ input[type="button"].btn-block {
 .input-group .ginput_container select:last-child,
 .ginput_container .input-group select:last-child,
 .input-group .ginput_container textarea:last-child,
-.ginput_container .input-group textarea:last-child,
+.ginput_container .input-group textarea:last-child, .input-group .sidebar .widget #archives-dropdown-2:last-child, .sidebar .widget .input-group #archives-dropdown-2:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .gform_button,
@@ -5782,7 +5786,7 @@ a.list-group-item.active > .badge,
 /* line 27, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #71523a;
+  color: #563b27;
 }
 
 /* line 34, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_thumbnails.scss */
@@ -10118,7 +10122,7 @@ iframe {
 .widget.widget_twitter ul li:before {
   content: none;
   padding-right: inherit;
-  color: #71523a;
+  color: #563b27;
 }
 /* line 86, ../scss/partials/_modules.scss */
 .widget.widget_twitter ul li .entry-content {
@@ -10147,57 +10151,57 @@ iframe {
 }
 
 /* line 111, ../scss/partials/_modules.scss */
-header {
+header.header-top {
   background: #56140a;
   position: relative;
 }
 /* line 115, ../scss/partials/_modules.scss */
-header .top-header .header-logo {
+header.header-top .top-header .header-logo {
   padding: 0;
 }
 /* line 117, ../scss/partials/_modules.scss */
-header .top-header .header-logo .main-logo {
+header.header-top .top-header .header-logo .main-logo {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 /* line 123, ../scss/partials/_modules.scss */
-header .top-header .widget p {
+header.header-top .top-header .widget p {
   color: #B3746B;
   font-size: 14px;
   margin: 0;
 }
 /* line 124, ../scss/partials/_modules.scss */
-header .top-header .widget a {
+header.header-top .top-header .widget a {
   color: #b3746b;
 }
 /* line 126, ../scss/partials/_modules.scss */
-header .top-header .social-links {
+header.header-top .top-header .social-links {
   left: 19px;
   position: absolute;
   top: 5px;
   display: block;
 }
 /* line 131, ../scss/partials/_modules.scss */
-header .top-header .social-links a {
+header.header-top .top-header .social-links a {
   margin-right: 10px;
   color: #ffffff;
 }
 /* line 134, ../scss/partials/_modules.scss */
-header .top-header .social-links a .fa-2x {
+header.header-top .top-header .social-links a .fa-2x {
   font-size: 27px;
 }
 /* line 138, ../scss/partials/_modules.scss */
-header .top-header .header-left p {
+header.header-top .top-header .header-left p {
   margin-left: 70px;
   line-height: 18px;
 }
 /* line 141, ../scss/partials/_modules.scss */
-header .navbar-brand {
+header.header-top .navbar-brand {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 /* line 144, ../scss/partials/_modules.scss */
-header .navbar-brand img {
+header.header-top .navbar-brand img {
   width: 100%;
   height: auto;
   max-width: 320px;
@@ -10205,12 +10209,12 @@ header .navbar-brand img {
   float: left;
 }
 /* line 152, ../scss/partials/_modules.scss */
-header .navbar-toggle {
+header.header-top .navbar-toggle {
   width: 100px;
   float: right;
 }
 /* line 155, ../scss/partials/_modules.scss */
-header .navbar-toggle .menu-text {
+header.header-top .navbar-toggle .menu-text {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
@@ -10219,7 +10223,7 @@ header .navbar-toggle .menu-text {
   line-height: 1.25;
 }
 /* line 163, ../scss/partials/_modules.scss */
-header .navbar-toggle .icon-bar {
+header.header-top .navbar-toggle .icon-bar {
   margin-left: auto;
   margin-right: 0;
 }
@@ -10304,9 +10308,9 @@ a.btn i.fa, a.gform_button i.fa {
 
 /* line 247, ../scss/partials/_modules.scss */
 body header .top-navbar {
-  -webkit-box-shadow: 0px 1px 3px 0px #71523a;
-  -moz-box-shadow: 0px 1px 3px 0px #71523a;
-  box-shadow: 0px 1px 3px 0px #71523a;
+  -webkit-box-shadow: 0px 1px 3px 0px #563b27;
+  -moz-box-shadow: 0px 1px 3px 0px #563b27;
+  box-shadow: 0px 1px 3px 0px #563b27;
 }
 
 /* line 254, ../scss/partials/_modules.scss */
@@ -10842,6 +10846,101 @@ h1, h2, h3, h4, h5, h6 {
 .well .copy-cta {
   margin-top: 15px;
   margin-left: 50px;
+}
+
+/* line 767, ../scss/partials/_modules.scss */
+body.blog .body-content article, body.single .body-content article, body.archive .body-content article {
+  border-bottom: 1px solid #c0935b;
+  margin-bottom: 40px;
+  padding-bottom: 38px;
+}
+/* line 773, ../scss/partials/_modules.scss */
+body.blog .body-content article .entry-header .entry-meta, body.single .body-content article .entry-header .entry-meta, body.archive .body-content article .entry-header .entry-meta {
+  background-color: #E0CAAD;
+  font-size: 13px;
+  text-transform: capitalize;
+  padding: 0;
+  margin-top: 33px;
+  height: 26px;
+}
+/* line 780, ../scss/partials/_modules.scss */
+body.blog .body-content article .entry-header .entry-meta .post-meta, body.single .body-content article .entry-header .entry-meta .post-meta, body.archive .body-content article .entry-header .entry-meta .post-meta {
+  float: left;
+  padding: 2px 5px 0px 15px;
+}
+/* line 781, ../scss/partials/_modules.scss */
+body.blog .body-content article .entry-header .entry-meta .discussion, body.single .body-content article .entry-header .entry-meta .discussion, body.archive .body-content article .entry-header .entry-meta .discussion {
+  margin: 0;
+  float: right;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+/* line 792, ../scss/partials/_modules.scss */
+body.blog .body-content article .entry-meta .entry-meta-category-tag, body.single .body-content article .entry-meta .entry-meta-category-tag, body.archive .body-content article .entry-meta .entry-meta-category-tag {
+  font-size: 13px;
+  margin-top: 30px;
+}
+/* line 795, ../scss/partials/_modules.scss */
+body.blog .body-content article .entry-meta .entry-meta-category-tag .tags-links, body.single .body-content article .entry-meta .entry-meta-category-tag .tags-links, body.archive .body-content article .entry-meta .entry-meta-category-tag .tags-links {
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 805, ../scss/partials/_modules.scss */
+header.page-header {
+  background: #91725A;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 0;
+  border: none;
+  margin-bottom: 55px;
+}
+/* line 812, ../scss/partials/_modules.scss */
+header.page-header h1.page-title {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #d5b792 !important;
+}
+
+/* line 823, ../scss/partials/_modules.scss */
+.sidebar .widget label.screen-reader-text {
+  display: none;
+}
+/* line 824, ../scss/partials/_modules.scss */
+.sidebar .widget #archives-dropdown-2 {
+  margin-top: 30px;
+}
+/* line 825, ../scss/partials/_modules.scss */
+.sidebar .widget form.search-form button {
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 832, ../scss/partials/_modules.scss */
+.share-icons {
+  margin-top: 25px;
+  position: relative;
+}
+/* line 839, ../scss/partials/_modules.scss */
+.share-icons a#bookmark img {
+  margin-top: -52px;
+}
+/* line 842, ../scss/partials/_modules.scss */
+.share-icons .st_plusone_vcount div {
+  height: 68px !important;
+}
+/* line 860, ../scss/partials/_modules.scss */
+.share-icons .stButton .stBubble_count {
+  height: 41px;
+}
+/* line 879, ../scss/partials/_modules.scss */
+.share-icons .stButton .stFb, .share-icons .stButton .stTwbutton, .share-icons .stButton .stMainServices {
+  height: 22px;
 }
 
 @media (min-width: 768px) {

@@ -14,7 +14,7 @@
  */
 function bootstrapBasicCategoriesList($categories_list = '') 
 {
-	return sprintf('<span class="categories-icon glyphicon glyphicon-th-list" title="' . __('Posted in', 'bootstrap-basic') . '"></span> %1$s', $categories_list);
+	return sprintf('<span class="fa fa-list-ul" title="' . __('Posted in', 'bootstrap-basic') . '"></span>&nbsp;&nbsp; <strong>CATEGORIES</strong> &nbsp;—&nbsp; %1$s', $categories_list);
 }// bootstrapBasicCategoriesList
 
 
@@ -125,9 +125,9 @@ function bootstrapBasicComment($comment, $args, $depth) {
  */
 function bootstrapBasicCommentsPopupLink() 
 {
-	$comment_icon = '<span class="comment-icon glyphicon glyphicon-comment"><small class="comment-total">%d</small></span>';
-	$comments_icon = '<span class="comment-icon glyphicon glyphicon-comment"><small class="comment-total">%s</small></span>';
-	return comments_popup_link(sprintf($comment_icon, ''), sprintf($comment_icon, '1'), sprintf($comments_icon, '%'), 'btn btn-default btn-xs');
+	$comment_icon = '<span class="fa fa-comment"></span>&nbsp; %d Comment';
+	$comments_icon = '<span class="fa fa-comment"></span>&nbsp; %s Comments';
+	return comments_popup_link(sprintf($comment_icon, ''), sprintf($comment_icon, '1'), sprintf($comments_icon, '%'), 'btn btn-primary btn-sm');
 }// bootstrapBasicCommentsPopupLink
 
 
@@ -244,10 +244,11 @@ function bootstrapBasicPagination($pagination_align_class = 'pagination-center p
  * @return string
  */
 function bootstrapBasicPostOn() 
-{
-	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+{	
 	if (get_the_time('U') !== get_the_modified_time('U')) {
 		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+	} else {
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	}
 
 	$time_string = sprintf($time_string,
@@ -257,7 +258,7 @@ function bootstrapBasicPostOn()
 		esc_html(get_the_modified_date())
 	);
 
-	printf(__('<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'bootstrap-basic'),
+	printf(__('<span class="posted-on">%1$s</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="byline">%2$s</span>', 'bootstrap-basic'),
 		sprintf('<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 			esc_url(get_permalink()),
 			esc_attr(get_the_time()),
@@ -280,7 +281,7 @@ function bootstrapBasicPostOn()
  */
 function bootstrapBasicTagsList($tags_list = '') 
 {
-	return sprintf('<span class="tags-icon glyphicon glyphicon-tags" title="' . __('Tagged', 'bootstrap-basic') . '"></span>&nbsp; %1$s', $tags_list);
+	return sprintf('<span class="fa fa-tag" title="' . __('Tagged', 'bootstrap-basic') . '"></span>&nbsp;&nbsp;<strong>TAGS</strong> &nbsp;—&nbsp; %1$s', $tags_list);
 }// bootstrapBasicTagsList
 
 
