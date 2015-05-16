@@ -97,7 +97,7 @@
 
 					<?php } //endif; ?> 
 				</div>
-			</main>
+			 </main>
 		    <aside class="col-sm-4 sidebar sidebar-box">
 		    	<div class="row">		        
 		    		<div class="col-sm-10 col-sm-offset-2 col-md-9 col-md-offset-3">		    
