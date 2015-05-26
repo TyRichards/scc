@@ -10943,6 +10943,23 @@ header.page-header h1.page-title {
   height: 22px;
 }
 
+/* line 961, ../scss/partials/_modules.scss */
+.post-img .core-image {
+  margin: 32px auto 0px auto;
+}
+
+/* line 964, ../scss/partials/_modules.scss */
+.search-results article {
+  border-bottom: 1px solid #c0935b;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+/* line 968, ../scss/partials/_modules.scss */
+.search-results article h1 a {
+  font-size: 30px;
+  line-height: 0;
+}
+
 @media (min-width: 768px) {
   /* line 10, ../scss/partials/_states.scss */
   .sidebar-col .widget h3 {

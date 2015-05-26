@@ -956,3 +956,17 @@ header.page-header {
 //         }    
 //     }
 // }
+
+.post-img {
+    .core-image { margin: 32px auto 0px auto; }
+}
+
+.search-results article {
+    border-bottom: 1px solid #c0935b;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    h1 a {
+        font-size: 30px;
+        line-height: 0;
+    }
+}

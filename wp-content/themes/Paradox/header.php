@@ -29,12 +29,23 @@
 	<body <?php body_class(); ?>>
 
 		<!-- Google Analytics -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-29115302-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
 	
 		<!--[if lte IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->	
-			
-		
+					
 		<?php do_action('before'); ?> 
 		<header class="header-top">			
 			<section class="container top-header hidden-xs hidden-sm">
@@ -50,7 +61,7 @@
 					<div class="col-sm-4 header-logo">
 						<div class="main-logo">
 							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Xstream Inspections Commercial & Residential Inspections" width="100%">
+					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Southlake Christian Counseling" width="100%">
 					        </a>
 				        </div>			        
 					</div>

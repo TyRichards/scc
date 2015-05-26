@@ -8,8 +8,18 @@
 			<a href="<?php the_permalink() ?>#respond" class="discussion btn btn-primary btn-sm">Leave A Comment &raquo;</a>
 		</div><!-- .entry-meta -->
 		<?php } //endif; ?> 
-	</header><!-- .entry-header -->
 
+		<div class="post-img">
+			<a href="<?php the_permalink() ?>">
+				<?php
+				if ( has_post_thumbnail() ) {
+			    	the_post_thumbnail('full', array('class' => 'core-image img-responsive text-center'));
+				} else {
+			    	echo "<img src='" . get_template_directory_uri() . "/assets/images/core_values.jpg' class='core-image img-responsive' />";
+				} ?>	
+			</a>
+		</div>		
+	</header><!-- .entry-header -->
 	
 	<?php if (is_search()) { // Only display Excerpts for Search ?> 
 	<div class="entry-summary">
