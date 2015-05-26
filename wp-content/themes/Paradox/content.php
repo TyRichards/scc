@@ -5,7 +5,7 @@
 		<?php if ('post' == get_post_type()) { ?> 
 		<div class="entry-meta">
 			<div class="post-meta"><?php bootstrapBasicPostOn(); ?></div>
-			<a href="<?php the_permalink() ?>#respond" class="discussion btn btn-primary btn-sm">Leave A Comment &raquo;</a>
+			<a href="<?php the_permalink() ?>#respond" class="discussion btn btn-primary btn-sm">Comment &raquo;</a>
 		</div><!-- .entry-meta -->
 		<?php } //endif; ?> 
 
