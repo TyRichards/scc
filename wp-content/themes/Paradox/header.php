@@ -61,7 +61,7 @@
 					<div class="col-sm-4 header-logo">
 						<div class="main-logo">
 							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Southlake Christian Counseling" width="100%">
+					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-red2.png" alt="Southlake Christian Counseling" width="100%">
 					        </a>
 				        </div>			        
 					</div>
