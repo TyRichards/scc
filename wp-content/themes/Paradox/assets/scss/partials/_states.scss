@@ -67,7 +67,8 @@
 @media (max-width: $screen-xs-max) {
 
     .navbar-default { 
-        background-color: $brand-primary; 
+        background-color: #d5b792;
+        border: none;
         .navbar-collapse { background-color: $navbar-default-bg; }
     }    
     body header .top-navbar .navbar-header {
@@ -78,7 +79,7 @@
             display: block; 
             width: 100%;
             margin: 0;
-            background: darken($brand-primary, 10%);
+            background: $brand-primary;
             padding: 12px 0;
             border-radius: 0;           
             .menu-elements { 
@@ -169,7 +170,8 @@
 // Small devices only (tablets, 768px to 992px)
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     .navbar-default { 
-        background-color: $brand-primary; 
+        background-color: #d5b792;
+        border: none; 
         .navbar-collapse { background-color: $navbar-default-bg; }
     }        
     .col-no-padding-sm {
@@ -184,6 +186,14 @@
             .menu li a { padding-right: 12px; padding-left: 12px; }      
         }
     }
+    body header .top-navbar .navbar-header {
+        // float: none;
+        .navbar-toggle {  
+            .menu-elements {}
+            .menu-text {}
+            .icon-bar { background-color: $brand-primary; }
+        }
+    }    
 }
 
 // Medium devices only (desktops, 992px to 1200px)

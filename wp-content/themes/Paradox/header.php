@@ -83,7 +83,7 @@
 							<div class="row">	
 								<div class="col-xs-12 col-sm-8 visible-xs visible-sm">
 									<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sm.png" alt="Southlake Christian Counseling">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sm2.png" alt="Southlake Christian Counseling">
 									</a>	
 								</div>		
 								<div class="col-xs-12 col-sm-4">									

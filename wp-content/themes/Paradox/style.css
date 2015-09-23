@@ -6624,7 +6624,7 @@ header.header-top {
     width: 100px;
     float: right; }
     header.header-top .navbar-toggle .menu-text {
-      color: #ffffff;
+      color: #56140a;
       text-transform: uppercase;
       font-size: 14px;
       float: left;
@@ -7169,7 +7169,8 @@ header.page-header {
     border: 4px solid #E6D0D0; } }
 @media (max-width: 767px) {
   .navbar-default {
-    background-color: #56140a; }
+    background-color: #d5b792;
+    border: none; }
     .navbar-default .navbar-collapse {
       background-color: #3f0f07; }
 
@@ -7179,7 +7180,7 @@ header.page-header {
     display: block;
     width: 100%;
     margin: 0;
-    background: #280905;
+    background: #56140a;
     padding: 12px 0;
     border-radius: 0; }
     body header .top-navbar .navbar-header .navbar-toggle .menu-elements {
@@ -7238,7 +7239,8 @@ header.page-header {
     padding: 0; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-default {
-    background-color: #56140a; }
+    background-color: #d5b792;
+    border: none; }
     .navbar-default .navbar-collapse {
       background-color: #3f0f07; }
 
@@ -7255,7 +7257,10 @@ header.page-header {
     text-align: center; }
     .small-footer .footer-menu .menu li a {
       padding-right: 12px;
-      padding-left: 12px; } }
+      padding-left: 12px; }
+
+  body header .top-navbar .navbar-header .navbar-toggle .icon-bar {
+    background-color: #56140a; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-collapse .gform_wrapper {
     width: 206px; }
