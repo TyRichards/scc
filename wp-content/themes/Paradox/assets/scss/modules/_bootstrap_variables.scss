@@ -22,7 +22,7 @@ $brand-dark:            #171717;
 $body-bg:               #fffdfc; //#ecf0f1;
 // $header-bg-color:       transparent;
 // $footer-bg-color:       $brand-primary;
-$text-color:            #9A7F7F; // #71523A;
+$text-color:            #886F6F; // #71523A;
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 
@@ -813,7 +813,7 @@ $list-bullet-color:             #CCCCCC;
 // //##
 
 // //** Horizontal line color.
-$hr-border:                   darken($body-bg, 15%);
+$hr-border:                   #E6D0D0;
 
 // //** Horizontal offset for forms and lists.
 // $component-offset-horizontal: 180px;
