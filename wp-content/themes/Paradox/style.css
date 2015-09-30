@@ -268,7 +268,7 @@ body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.65;
-  color: #886F6F;
+  color: #675050;
   background-color: #fffdfc; }
 
 input,
@@ -1761,7 +1761,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #c2b4b4; }
+  color: #a88f8f; }
 
 @media (min-width: 768px) {
   .form-inline .form-group, .navbar-form .form-group, .form-inline .gform_wrapper li, .gform_wrapper .form-inline li, .navbar-form .gform_wrapper li, .gform_wrapper .navbar-form li {
@@ -3806,7 +3806,7 @@ a.list-group-item.active > .badge,
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #886F6F; }
+    color: #675050; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -6565,7 +6565,7 @@ iframe {
       .widget.widget_twitter ul li:before {
         content: none;
         padding-right: inherit;
-        color: #886F6F; }
+        color: #675050; }
       .widget.widget_twitter ul li .entry-content {
         font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
         font-size: 17px;
@@ -6688,9 +6688,9 @@ a.btn i.fa, a.gform_button i.fa {
   background-color: #56140a; }
 
 body header .top-navbar {
-  -webkit-box-shadow: 0px 1px 3px 0px #886F6F;
-  -moz-box-shadow: 0px 1px 3px 0px #886F6F;
-  box-shadow: 0px 1px 3px 0px #886F6F; }
+  -webkit-box-shadow: 0px 1px 3px 0px #675050;
+  -moz-box-shadow: 0px 1px 3px 0px #675050;
+  box-shadow: 0px 1px 3px 0px #675050; }
 
 .navbar-toggle {
   margin-top: 15px;
@@ -6750,7 +6750,7 @@ body header .top-navbar {
 
 .small-footer {
   background: #d5b792;
-  color: #886F6F; }
+  color: #675050; }
   .small-footer .social-links {
     text-align: center;
     margin-top: 20px;
@@ -7188,6 +7188,8 @@ header.page-header {
       margin-right: auto;
       float: none;
       width: 80px; }
+    body header .top-navbar .navbar-header .navbar-toggle .menu-text {
+      color: #fff; }
 
   .clipboard-icon {
     padding-left: 109px;
