@@ -220,4 +220,6 @@ require get_template_directory() . '/inc/widgets/BootstrapBasicSearchWidget.php'
 require get_template_directory() . '/inc/template-widgets-hook.php';
 
 // Image Thumbnail Sizes
-add_image_size( 'sidebar-thumb', 500, 9999 );
+add_image_size( 'service-image', 465, 300, true ); // ('Name', width, height, crop)
+add_image_size( 'featured-blog', 544 );
+add_image_size( 'staff-image', 324, 197, true ); // ('Name', width, height, crop)
